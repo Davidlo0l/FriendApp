@@ -4,9 +4,12 @@
 namespace FriendApp.Model
 {
     using FriendApp.ViewModel;
+    using SQLite;
+
     public class Friend : Notificable
     {
         #region Atributos
+        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         private string nombre;
         private string telefono;
